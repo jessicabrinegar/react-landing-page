@@ -4,11 +4,17 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Jumbotron } from "./jumbotron.jsx";
 import { NavBar } from "./navbar.jsx"
+import { Card } from "./card.jsx"
 //create your first component
 const Home = () => {
 	return (
+		<div><NavBar />
 		<Jumbotron />
-		<NavBar />
+		<div className="d-flex">
+		<Card text="placeholding text"/>
+		<Card />
+		<Card />
+		<Card /></div></div>
 	);
 };
 
